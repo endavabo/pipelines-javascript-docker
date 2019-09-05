@@ -10,8 +10,8 @@ variables:
 steps:
 - task: Docker@2
   displayName: Build an image
-  image: $(dockerid).azurecr.io/$(imageName)
   inputs:
+    image: $(dockerid).azurecr.io/$(imageName)
     repository: $(imageName)
     command: build
     Dockerfile: app/Dockerfile
