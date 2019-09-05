@@ -14,3 +14,8 @@ steps:
     repository: $(imageName)
     command: build
     Dockerfile: app/Dockerfile
+
+- script: |
+    docker login -u "$(acrusername)" -p "$(acrpassword)" $(dockerid).azurecr.io
+    docker push $(dockerid).azurecr.io/$(apiImageName)
+  displayName: 'API docker build'
