@@ -17,5 +17,5 @@ steps:
 
 - script: |
     docker login -u "$(acrusername)" -p "$(acrpassword)" $(dockerid).azurecr.io
-    docker push $(dockerid).azurecr.io/$(apiImageName)
+    docker push $(dockerid).azurecr.io/$(imageName)
   displayName: 'API docker build'
