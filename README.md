@@ -31,3 +31,5 @@ Microsoft and any contributors reserve all other rights, whether under their res
 or trademarks, whether by implication, estoppel or otherwise.
 
 #2
+
+[![Build Status](https://dev.azure.com/BorislavLukanov0054/Testpipe1/_apis/build/status/endavabo.pipelines-javascript-docker?branchName=master)](https://dev.azure.com/BorislavLukanov0054/Testpipe1/_build/latest?definitionId=3&branchName=master)
